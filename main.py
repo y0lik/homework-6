@@ -4,9 +4,7 @@ connection = sqlite3.connect("mydbfile.sl3", 5)
 cur = connection.cursor()
 
 
-# cur.execute(f"CREATE TABLE student (name TEXT);")
-# cur.execute(f"ALTER TABLE student ADD age TEXT; ")
-# cur.execute(f"ALTER TABLE student ADD school TEXT; ")
+# cur.execute(f"CREATE TABLE student (name TEXT, age TEXT, school TEXT);")
 
 cur.execute("INSERT INTO student (name) VALUES ('john'), ('andrei');")
 cur.execute("INSERT INTO student (age) VALUES ('Twenty'), ('Nineteen');")
